@@ -24,12 +24,10 @@ function App() {
   if (!data) return <h3>Loading Data</h3>
   return (
     <div className="App">
-      <p>
         <Title data={data} />
         <Date data={data} />
         <Copy data={data} />
         <Image data={data} />
-      </p>
     </div>
   );
 }
