@@ -9,7 +9,7 @@ function App() {
 
   const [data, setData] = useState({});
   const fetchData = () => {
-    Axios.get(`https://api.nasa.gov/planetary/apod?api_key=yQb9FfH5iS3G8fZ5h1Sf4Kqqy5ydzCi8e3vFI82y&date=2012-03-14`)
+    Axios.get(`https://api.nasa.gov/planetary/apod?api_key=yQb9FfH5iS3G8fZ5h1Sf4Kqqy5ydzCi8e3vFI82y`)
       .then(res => {
         console.log(res);
         setData(res.data);
