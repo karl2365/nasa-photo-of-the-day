@@ -34,8 +34,8 @@ function App() {
     <Container className="App">
         <Title data={data} />
         <Date data={data} />
-        <Copy data={data} />
         <Image data={data} />
+        <Copy data={data} />
     </Container>
   );
 }
