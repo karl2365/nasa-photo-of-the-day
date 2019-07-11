@@ -5,6 +5,14 @@ import Title from './components/Title';
 import Image from './components/Image';
 import Copy from './components/Copy';
 import Date from './components/Date';
+import styled from 'styled-components';
+
+const Container = styled.div`
+text-align: left;
+width: 500px;
+margin: 20px auto;
+  
+`;
 function App() {
 
   const [data, setData] = useState({});
@@ -23,12 +31,12 @@ function App() {
   }, [])
   if (!data) return <h3>Loading Data</h3>
   return (
-    <div className="App">
+    <Container className="App">
         <Title data={data} />
         <Date data={data} />
         <Copy data={data} />
         <Image data={data} />
-    </div>
+    </Container>
   );
 }
 
